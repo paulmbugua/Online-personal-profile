@@ -88,7 +88,7 @@ export default function Profile() {
       <nav className={`fixed left-0 right-0 top-0 z-50 transition duration-300 ${isScrolled ? "border-b border-white/10 bg-slate-950/80 shadow-2xl backdrop-blur-xl" : "bg-transparent"}`}>
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
-            <img src="/paul_icon.png" alt="Paul DevWorks" className="h-9 w-9 rounded-xl object-cover" />
+            <img src="/brand-mark.svg" alt="Paul DevWorks" className="h-9 w-9 rounded-2xl object-contain shadow-lg shadow-cyan-950/20" />
             <span className="text-sm font-bold uppercase tracking-[0.24em] text-white">Paul DevWorks</span>
           </a>
 
