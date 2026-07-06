@@ -28,7 +28,38 @@ const websiteProjects = [
   { name: "One Dollar CV Pro", url: "https://www.onedollarcvpro.com", category: "Career tools", accent: "from-fuchsia-300 to-rose-600" },
 ];
 
-const appProjects = ["Daybreak App", "Grogon App", "Grogon Sacco App", "Mindcare App", "eKazi App"];
+const appProjects = [
+  {
+    name: "Daybreak App",
+    tagline: "Learning that follows the student.",
+    description:
+      "Online learning, institution classrooms, course media, and an AI tutor that helps learners revise, ask questions, and keep moving through lessons.",
+  },
+  {
+    name: "Grogon App",
+    tagline: "A marketplace for motion.",
+    description:
+      "A listing app for auto spare parts, motorcycle parts, and vehicle sales, built to help buyers discover stock faster and sellers move inventory clearly.",
+  },
+  {
+    name: "Grogon Sacco App",
+    tagline: "Member services for the Grogon ecosystem.",
+    description:
+      "A SACCO app for Grogon shop owners and mechanics to access member services, manage activity, and stay connected to their business community.",
+  },
+  {
+    name: "Mindcare App",
+    tagline: "Therapy access from anywhere.",
+    description:
+      "An online therapy experience for clients to connect with mental health support, book care, and continue wellness conversations privately.",
+  },
+  {
+    name: "eKazi App",
+    tagline: "Handyman work made easier to find.",
+    description:
+      "A service app for handyman activities, connecting customers with practical help for repairs, maintenance, installation, and field tasks.",
+  },
+];
 
 const skills = ["React", "React Native", "TypeScript", "Node.js", "Express", "Tailwind CSS", "WordPress", "MongoDB", "Cloud hosting", "Product design", "Mobile apps", "Payments"];
 
@@ -211,8 +242,9 @@ export default function Profile() {
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300/10">{index % 2 === 0 ? <FaAndroid /> : <FaApple />}</span>
                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Mobile app</span>
                   </div>
-                  <h3 className="text-xl font-black">{app}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">Product design, mobile interface, user flows, and connected platform experience.</p>
+                  <h3 className="text-xl font-black">{app.name}</h3>
+                  <p className="mt-2 text-xs font-bold uppercase tracking-[0.18em] text-cyan-200">{app.tagline}</p>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">{app.description}</p>
                 </div>
               ))}
             </div>
