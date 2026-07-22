@@ -172,7 +172,7 @@ export default function Profile() {
             <div className="relative mx-auto max-w-md">
               <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-cyan-300/25 via-fuchsia-400/20 to-amber-300/20 blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl">
-                <img src="/profile.jpeg" alt="Paul DevWorks profile" className="aspect-square w-full rounded-full border-4 border-white/25 object-cover shadow-2xl ring-8 ring-cyan-300/15" />
+                <img src="/profile-full.svg" alt="Paul DevWorks profile" className="aspect-[4/5] w-full rounded-[1.5rem] border border-white/20 bg-white/5 object-contain shadow-2xl ring-8 ring-cyan-300/15" />
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
                   <Stat number="8" label="Websites" />
                   <Stat number="5" label="Apps" />
