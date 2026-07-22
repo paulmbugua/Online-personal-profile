@@ -30,7 +30,9 @@ const websiteProjects = [
   { name: "Thutha", url: "https://www.thutha.co.ke", category: "Digital platform", accent: "from-lime-300 to-emerald-700" },
   { name: "Professional Resume", url: "https://professionalresume.co.ke", category: "Career services", accent: "from-violet-300 to-blue-700" },
   { name: "Soko Eats", url: "https://www.sokoeats.co.ke", category: "Food marketplace", accent: "from-orange-300 to-red-600" },
-  { name: "All Shops eKazi", url: "https://allshops.ekazi.co.ke", category: "Business marketplace", accent: "from-teal-300 to-cyan-700" },
+  { name: "All Shops POS", url: "https://allshopspos.com", category: "Business marketplace", accent: "from-teal-300 to-cyan-700" },
+  { name: "Rivera Creators", url: "https://riveracreators.com", category: "Creator platform", accent: "from-fuchsia-300 to-violet-700" },
+  { name: "Gulf Delivery Pro", url: "https://gulfdeliverypro.com", category: "Delivery platform", accent: "from-amber-300 to-red-600" },
 ];
 
 const appProjects = [
@@ -63,6 +65,25 @@ const appProjects = [
     tagline: "Handyman work made easier to find.",
     description:
       "A service app for handyman activities, connecting customers with practical help for repairs, maintenance, installation, and field tasks.",
+  },
+
+  {
+    name: "Rivera",
+    tagline: "Create, discover, and grow with Rivera.",
+    description: "A creator-focused app for sharing ideas, discovering creative work, and connecting audiences with fresh digital experiences.",
+    playUrl: "https://play.google.com/store/apps/details?id=com.paulmbugua1.rivera",
+  },
+  {
+    name: "Gulf Delivery",
+    tagline: "Delivery coordination made practical.",
+    description: "A delivery app designed to help customers place requests and keep deliveries organized from pickup to arrival.",
+    playUrl: "https://play.google.com/store/apps/details?id=com.paulmbugua2.gulfdelivery",
+  },
+  {
+    name: "AllshopsPOS",
+    tagline: "Point of sale for modern shops.",
+    description: "A retail operations app for managing shop sales, products, and everyday point-of-sale activity in one place.",
+    playUrl: "https://play.google.com/store/apps/details?id=com.allshops.pos",
   },
 ];
 
@@ -179,8 +200,8 @@ export default function Profile() {
               <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl">
                 <img src="/profile-full.svg" alt="Paul DevWorks profile" className="aspect-[4/5] w-full rounded-[1.5rem] border border-white/20 bg-white/5 object-contain shadow-2xl ring-8 ring-cyan-300/15" />
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                  <Stat number="13" label="Websites" />
-                  <Stat number="5" label="Apps" />
+                  <Stat number="15" label="Websites" />
+                  <Stat number="8" label="Apps" />
                   <Stat number="1" label="Studio" />
                 </div>
               </div>
@@ -242,7 +263,7 @@ export default function Profile() {
 
             <div className="grid gap-4 sm:grid-cols-2" data-aos="fade-left">
               {appProjects.map((app, index) => (
-                <div key={app} className="rounded-2xl border border-white/10 bg-slate-950/70 p-5 shadow-xl shadow-black/20">
+                <div key={app.name} className="rounded-2xl border border-white/10 bg-slate-950/70 p-5 shadow-xl shadow-black/20">
                   <div className="mb-6 flex items-center gap-3 text-cyan-300">
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300/10">{index % 2 === 0 ? <FaAndroid /> : <FaApple />}</span>
                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Mobile app</span>
@@ -250,6 +271,9 @@ export default function Profile() {
                   <h3 className="text-xl font-black">{app.name}</h3>
                   <p className="mt-2 text-xs font-bold uppercase tracking-[0.18em] text-cyan-200">{app.tagline}</p>
                   <p className="mt-3 text-sm leading-6 text-slate-300">{app.description}</p>
+                  {app.playUrl && (
+                    <a href={app.playUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-cyan-300 transition hover:text-cyan-100">Open on Google Play <FaArrowRight /></a>
+                  )}
                 </div>
               ))}
             </div>
