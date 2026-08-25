@@ -26,6 +26,9 @@ const websiteProjects = [
   { name: "eKazi", url: "https://www.ekazi.co.ke", category: "Workforce platform", accent: "from-cyan-300 to-indigo-600" },
   { name: "Grogon Sacco", url: "https://www.grogonsacco.co.ke", category: "Sacco platform", accent: "from-green-300 to-emerald-700" },
   { name: "One Dollar CV Pro", url: "https://www.onedollarcvpro.com", category: "Career tools", accent: "from-fuchsia-300 to-rose-600" },
+  { name: "Beyond Borders Partners", url: "https://beyondborderspartners.co.ke", category: "Partnership platform", accent: "from-indigo-300 to-cyan-600" },
+  { name: "Thutha", url: "https://www.thutha.co.ke", category: "Digital platform", accent: "from-lime-300 to-emerald-700" },
+  { name: "Professional Resume", url: "https://professionalresume.co.ke", category: "Career services", accent: "from-violet-300 to-blue-700" },
 ];
 
 const appProjects = [
@@ -174,7 +177,7 @@ export default function Profile() {
               <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl">
                 <img src="/profile-full.svg" alt="Paul DevWorks profile" className="aspect-[4/5] w-full rounded-[1.5rem] border border-white/20 bg-white/5 object-contain shadow-2xl ring-8 ring-cyan-300/15" />
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                  <Stat number="8" label="Websites" />
+                  <Stat number="11" label="Websites" />
                   <Stat number="5" label="Apps" />
                   <Stat number="1" label="Studio" />
                 </div>
