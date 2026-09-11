@@ -29,6 +29,8 @@ const websiteProjects = [
   { name: "Beyond Borders Partners", url: "https://beyondborderspartners.co.ke", category: "Partnership platform", accent: "from-indigo-300 to-cyan-600" },
   { name: "Thutha", url: "https://www.thutha.co.ke", category: "Digital platform", accent: "from-lime-300 to-emerald-700" },
   { name: "Professional Resume", url: "https://professionalresume.co.ke", category: "Career services", accent: "from-violet-300 to-blue-700" },
+  { name: "Soko Eats", url: "https://www.sokoeats.co.ke", category: "Food marketplace", accent: "from-orange-300 to-red-600" },
+  { name: "All Shops eKazi", url: "https://allshops.ekazi.co.ke", category: "Business marketplace", accent: "from-teal-300 to-cyan-700" },
 ];
 
 const appProjects = [
@@ -64,7 +66,7 @@ const appProjects = [
   },
 ];
 
-const skills = ["React", "React Native", "TypeScript", "Node.js", "Express", "Tailwind CSS", "WordPress", "MongoDB", "Cloud hosting", "Product design", "Mobile apps", "Payments"];
+const skills = ["React", "React Native", "TypeScript", "Node.js", "Express", "Tailwind CSS", "WordPress", "MongoDB", "Cloud hosting", "Product design", "Mobile apps", "Payments", "RAG", "Prisma", "OutSystems", "Python", "Flutter", "VPS", "Dockers", ];
 
 const contact = {
   phone: "+25472887280",
@@ -177,7 +179,7 @@ export default function Profile() {
               <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl">
                 <img src="/profile-full.svg" alt="Paul DevWorks profile" className="aspect-[4/5] w-full rounded-[1.5rem] border border-white/20 bg-white/5 object-contain shadow-2xl ring-8 ring-cyan-300/15" />
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                  <Stat number="11" label="Websites" />
+                  <Stat number="13" label="Websites" />
                   <Stat number="5" label="Apps" />
                   <Stat number="1" label="Studio" />
                 </div>
