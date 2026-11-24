@@ -33,6 +33,7 @@ const websiteProjects = [
   { name: "All Shops POS", url: "https://allshopspos.com", category: "Business marketplace", accent: "from-teal-300 to-cyan-700" },
   { name: "Rivera Creators", url: "https://riveracreators.com", category: "Creator platform", accent: "from-fuchsia-300 to-violet-700" },
   { name: "Gulf Delivery Pro", url: "https://gulfdeliverypro.com", category: "Delivery platform", accent: "from-amber-300 to-red-600" },
+  { name: "TikTok Mwitu", url: "https://www.tiktokmwitu.co.ke", category: "Social platform", accent: "from-pink-300 to-violet-700" },
 ];
 
 const appProjects = [
@@ -200,7 +201,7 @@ export default function Profile() {
               <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur-xl">
                 <img src="/profile-full.svg" alt="Paul DevWorks profile" className="aspect-[4/5] w-full rounded-[1.5rem] border border-white/20 bg-white/5 object-contain shadow-2xl ring-8 ring-cyan-300/15" />
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                  <Stat number="15" label="Websites" />
+                  <Stat number="16" label="Websites" />
                   <Stat number="8" label="Apps" />
                   <Stat number="1" label="Studio" />
                 </div>
